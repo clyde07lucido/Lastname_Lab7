@@ -8,7 +8,7 @@ final_grade = float(input("Enter your Grade in Final Period: "))
 final_total_grade = prelim_grade + midterm_grade  + final_grade 
 final_total_grade_percentage = round(final_total_grade/3)
 
-if prelim_grade or midterm_grade or final_grade >= 40 and prelim_grade or midterm_grade or final_grade <= 100:
+if 40 <= prelim_grade and midterm_grade and final_grade <=100:
     if final_total_grade_percentage >= 99 and final_total_grade_percentage <= 100:
         print(f"\nName of a Student: {name}\nSection: {section}\nFinal Grade: {final_total_grade_percentage}\nGPA: 1.00")
     elif final_total_grade_percentage >= 96 and final_total_grade_percentage <= 98:
